@@ -9,6 +9,8 @@
     "./src/assets/scss/base/normalize.scss"
   ],
   "rules": {
+    "import-notation": "string",
+    "function-url-quotes": "always",
     "declaration-empty-line-before": "never",
     "media-feature-range-notation": null,
     "order/order": [

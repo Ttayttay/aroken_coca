@@ -1,0 +1,13 @@
+:root {
+  --neutural-color-10: #fff;
+  --neutural-color-20: #f5f5f5;
+  --neutural-color-60: #18181d;
+  --neutural-color-100: #1d1e25;
+  --container-padding: 15px;
+  --container-width: 1200px;
+}
+
+[data-theme='dark'] {
+  --neutural-color-10: #1d1e25;
+  --neutural-color-100: #fff;
+}

@@ -1,0 +1,17 @@
+.about{
+    margin-top: 105px;
+
+    &__title {
+        max-width: 959px;
+    }
+
+    &__subcontainer{
+        @include flex-all-between;
+        margin: 118px 0 135px;
+        max-width: 100%;
+    }
+    
+    &__stamp path{
+        fill: var(--neutral-color-100)
+    }
+}

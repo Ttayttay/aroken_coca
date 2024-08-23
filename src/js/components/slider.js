@@ -35,3 +35,16 @@ export const useTestimonialsSlider = () => {
     },
   });
 };
+
+export const useTeamSlider = () => {
+  new Swiper(".team__slider", {
+    modules: [Navigation],
+    slidesPerView: 3,
+    spaceBetween: 32,
+    loop: true,
+    navigation: {
+      prevEl: '.testimonials__btn--prev',
+      nextEl: '.testimonials__btn--next',
+    },
+  })
+};

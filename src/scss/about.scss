@@ -4,9 +4,14 @@
 
 // Components
 @import './components/header';
+@import './globals/decors';
 
 // Home
 @import './components/about/hero';
+@import './components/about/belive';
+@import './globals/buttons';
+@import './components/about/acceleration';
+@import './components/about/team';
 
 // Footer
 @import './components/footer';

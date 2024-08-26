@@ -37,14 +37,61 @@ export const useTestimonialsSlider = () => {
 };
 
 export const useTeamSlider = () => {
-  new Swiper(".team__slider", {
+  new Swiper('.team__slider', {
     modules: [Navigation],
-    slidesPerView: 3,
-    spaceBetween: 32,
+    slidesPerView: 1,
+    spaceBetween: 16,
     loop: true,
     navigation: {
       prevEl: '.testimonials__btn--prev',
       nextEl: '.testimonials__btn--next',
     },
-  })
+    breakpoints: {
+      993: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+      577: {
+        slidesPerView: 2,
+        spaceBetween: 22,
+      },
+    },
+  });
+};
+
+export const useNewsSlider = () => {
+  new Swiper('.tabs-news__slider', {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 32,
+    loop: true,
+    breakpoints: {
+      993: {
+        slidesPerView: 2.5,
+      },
+      577: {
+        slidesPerView: 1.5,
+      },
+    },
+  });
+};
+export const useArticlesSlider = () => {
+  new Swiper('.articles__slider', {
+    modules: [Navigation],
+    slidesPerView: 1,
+    spaceBetween: 32,
+    loop: true,
+    navigation: {
+      prevEl: '.articles__btn--prev',
+      nextEl: '.articles__btn--next',
+    },
+    breakpoints: {
+      993: {
+        slidesPerView: 2.5,
+      },
+      577: {
+        slidesPerView: 1.5,
+      },
+    },
+  });
 };

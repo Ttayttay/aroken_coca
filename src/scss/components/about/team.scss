@@ -1,5 +1,5 @@
 .team {
-  margin: 165px 0;
+  margin: 165px 0 0;
 
   &__title {
     max-width: 725px;
@@ -36,28 +36,32 @@
     }
   }
 
-  &__contacts{
+  &__contacts {
     @include flex-justify-between;
     margin-top: 16px;
   }
 
-  &__info{
+  &__card {
+    max-width: 379px
+  }
+
+  &__info {
     @include flex-column;
     gap: 8px;
   }
 
-  &__name{
+  &__name {
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
   }
 
-  &__level{
+  &__level {
     color: var(--neutral-color-120);
   }
 
   &__socials {
-    @include  flex-justify-between;
+    @include flex-justify-between;
     width: 100%;
     max-width: 112px;
   }
